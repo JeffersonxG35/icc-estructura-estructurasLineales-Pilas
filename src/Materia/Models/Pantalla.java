@@ -1,6 +1,7 @@
 package Materia.Models;
 
 public class Pantalla {
+
     private String nombre;
     private String ruta;
 
@@ -24,5 +25,5 @@ public class Pantalla {
     public void setRuta(String ruta) {
         this.ruta = ruta;
     }
-    
+
 }
