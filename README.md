@@ -10,4 +10,3 @@ Version donde se agregan las colas.
 
 ## Version 2.0.2
 Se crea el sign validator el cual detecta si se abren y cierran parentesis, corchetes, llaves, de forma correcta.
-El segundo stackSorter no fue concluido por falta de tiempoy tambien digamos de conocimiento :c.
