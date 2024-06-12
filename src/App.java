@@ -1,5 +1,6 @@
 import Ejercicio_01_sign.SignValidator;
 import Ejercicio_02_sorting.StackSorter;
+import Ejercicio_03_linkedLists.LinkedListEjr;
 import Materia.Cola.Cola;
 import Materia.Cola.ColaGenerica;
 import Materia.ListasEnlazadas.ListaEnlazada;
@@ -97,6 +98,39 @@ public class App {
         lista.print();
         lista.deleteNode(3);
         lista.print();
+
+        //INSTANCIACION DE LA CLASE LinkedListEjr
+        LinkedListEjr list = new LinkedListEjr();
+        System.out.println("\n///////LinkedLisEjr//////// ");
+        list.addNode(1);
+        list.addNode(2);
+        list.addNode(8);
+        list.addNode(9);
+        list.addNode(6);
+
+        int position = 1;
+        int position2 = 2;
+        int position3 = 3;
+        int position4 = 4;
+    
+
+        System.out.println("Lista enlazada con " +list.size()+ " datos");
+        list.imprimirNode();
+        System.out.println("Posicion a buscar: " +position);
+        System.out.println("Valor de la posicion: " +list.getByPos(position));
+        System.out.println("Posicion a buscar: " +position2);
+        System.out.println("Valor de la posicion: " +list.getByPos(position2));
+        System.out.println("Posicion a buscar: " +position3);
+        System.out.println("Valor de la posicion: " +list.getByPos(position3));
+        System.out.println("Posicion a buscar: " +position4);
+        System.out.println("Valor de la posicion: " +list.getByPos(position4));
+
+
+
+        
+
+
+
 
     }
 }

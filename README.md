@@ -10,3 +10,8 @@ Version donde se agregan las colas.
 
 ## Version 2.0.2
 Se crea el sign validator el cual detecta si se abren y cierran parentesis, corchetes, llaves, de forma correcta.
+Y también ya se agregó el ejercicio de StackSorter y funciona correctamente. 
+Se avanzó un poco en clase sobre las listas enlazadas
+
+## Version 2.0.3
+Se agrega el ejercicio "LinkedListEj" que devuelve el valor de la posicion que pedimos

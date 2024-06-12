@@ -1,11 +1,11 @@
-package Materia.ListasEnlazadas;
+package Ejercicio_03_linkedLists;
 
 import Materia.Models.Node;
 
-public class ListaEnlazada {
-    public Node head;
+public class LinkedListEjr {
+     public Node head;
 
-    public ListaEnlazada() {
+    public LinkedListEjr() {
 
     }
 
@@ -41,10 +41,39 @@ public class ListaEnlazada {
     }
 
     public int size() {
-        return 1;
+        int size = 0;
+        Node current = head;
+        while (current != null) {
+            size++;
+            current = current.next;
+        }
+        return size;
+    }
+    
+    //METODO PARA OBTENER LA POSICION DE FORMA DESCENDENTE
+    public int getByPos(int position){
+        int tamanio= 0;
+        Node current = head;
+
+        while (current != null) {
+            tamanio++;
+            current = current.next;
+        }
+
+        if (position >= tamanio) {
+            throw new IllegalArgumentException("La posición no existe");
+        } 
+
+        int targetPos = tamanio - position-1;
+        current = head;
+        for (int i = 0; i < targetPos; i++) {
+            current = current.next;
+        }
+        return current.value;
     }
 
-    public void print() {
+
+    public void imprimirNode (){
         if (head == null) {
             System.out.println("Lista vacía");
             return;
@@ -55,6 +84,5 @@ public class ListaEnlazada {
             current = current.next;
         }
         System.out.println("Node -> " + current.value);
-        System.out.println("Fin de la lista");
     }
 }
